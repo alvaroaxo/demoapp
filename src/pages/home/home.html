@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      allrededor
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+  <button ion-item *ngFor="let categoria of categorias" (click)="goToDetail(categoria.id)">
+    {{ categoria.titulo }}
+  </button>
+</ion-list>
+</ion-content>
